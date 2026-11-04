@@ -38,7 +38,7 @@ rustls = { version = "0.23.45", default-features = false, features = ["ring", "s
 tokio-rustls = { version = "0.26.6", default-features = false, features = ["tls12"] }
 # Extension packages (`extensions::package`): reading `.zip` / `.sextant-ext` archives. Deflate through flate2 with the
 # zlib-rs backend the build already has; no other compression methods, no encryption.
-zip = { version = "4.6.1", default-features = false, features = ["deflate-flate2-zlib-rs"] }
+zip = { version = "9.0.5", default-features = false, features = ["deflate-flate2-zlib-rs"] }
 # Certificates of TLS Secrets (`tls.rs`): a pure-Rust X.509/PEM parser, no crypto backend (nothing is verified).
 x509-parser = { version = "0.18.1", default-features = false }
 # Reading a kubeconfig token for its expiry (`kubeconfig::expiry`): the version kube already brings.
